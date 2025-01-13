@@ -31,6 +31,8 @@ public class ModCreativeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(modblock.FIRESHARD_BLOCK.get());
                         pOutput.accept(modblock.LAVASHARD_STONE_MINERAL_BLOCK.get());
+                        pOutput.accept(modblock.LAVASHARD_DEEPSLATE_MINERAL_BLOCK.get());
+                        pOutput.accept(modblock.LAVASHARD_NETHERRACK_MINERAL_BLOCK.get());
 
 
                     })
