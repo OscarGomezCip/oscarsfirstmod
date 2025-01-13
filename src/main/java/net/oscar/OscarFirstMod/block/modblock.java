@@ -27,6 +27,9 @@ public class modblock {
     public static final RegistryObject<Block> LAVASHARD_STONE_MINERAL_BLOCK = registerBlock("lavashard_stone_mineral_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE)));
 
+    public static final RegistryObject<Block> LAVASHARD_DEEPSLATE_MINERAL_BLOCK = registerBlock("lavashard_deepslate_mineral_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE)));
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
