@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oscarfirstmod:lavashard"
+    }
+  },
+  "result": {
+    "item": "oscarfirstmod:fireshard_block"
+  }
+}

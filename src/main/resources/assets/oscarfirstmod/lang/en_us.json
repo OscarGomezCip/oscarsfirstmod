@@ -1,0 +1,10 @@
+{
+  "item.oscarfirstmod.lavashard": "Lava Shard",
+  "item.oscarfirstmod.charged_lavashard": "Charged Lava Shard",
+
+  "block.oscarfirstmod.fireshard_block": "Block of Lava Shard",
+  "block.oscarfirstmod.lavashard_stone_mineral_block": "Lava shard stone ore",
+
+  "creativetab.oscar_mod_items": "Oscar's Mod Items",
+  "creativetab.oscar_mod_blocks": "Oscar's Mod Blocks"
+}
