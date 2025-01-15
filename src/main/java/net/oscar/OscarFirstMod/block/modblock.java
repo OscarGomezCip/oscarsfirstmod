@@ -1,11 +1,13 @@
 package net.oscar.OscarFirstMod.block;
 
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -25,13 +27,19 @@ public class modblock {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> LAVASHARD_STONE_MINERAL_BLOCK = registerBlock("lavashard_stone_mineral_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(3f).requiresCorrectToolForDrops(), UniformInt.of(4, 8)));
 
     public static final RegistryObject<Block> LAVASHARD_DEEPSLATE_MINERAL_BLOCK = registerBlock("lavashard_deepslate_mineral_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.DEEPSLATE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(5, 10)));
 
     public static final RegistryObject<Block> LAVASHARD_NETHERRACK_MINERAL_BLOCK = registerBlock("lavashard_netherrack_mineral_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(4, 8)));
+
+    public static final RegistryObject<Block> BURNEDPLANKS = registerBlock("burnedplanks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -20,7 +20,10 @@ public class ModCreativeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(moditems.LAVASHARD.get());
                         pOutput.accept(moditems.CHARGED_LAVA_SHARD.get());
-
+                        pOutput.accept(moditems.LAVAFINDER.get());
+                        pOutput.accept(moditems.LAVALAUNCHER.get());
+                        pOutput.accept(moditems.PEPPER.get());
+                        pOutput.accept(moditems.CHARGEDPEPPER.get());
 
                     })
                     .build());
@@ -29,11 +32,11 @@ public class ModCreativeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(modblock.FIRESHARD_BLOCK.get()))
                     .title(Component.translatable("creativetab.oscar_mod_blocks"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(modblock.FIRESHARD_BLOCK.get());
                         pOutput.accept(modblock.LAVASHARD_STONE_MINERAL_BLOCK.get());
                         pOutput.accept(modblock.LAVASHARD_DEEPSLATE_MINERAL_BLOCK.get());
                         pOutput.accept(modblock.LAVASHARD_NETHERRACK_MINERAL_BLOCK.get());
-
+                        pOutput.accept(modblock.FIRESHARD_BLOCK.get());
+                        pOutput.accept(modblock.BURNEDPLANKS.get());
 
                     })
                     .build());

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ZO",
+    " #Z",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "item": "minecraft:redstone"
+    },
+    "Z": {
+      "item": "oscarfirstmod:charged_lavashard"
+    }
+  },
+  "result": {
+    "item": "oscarfirstmod:lavafinder"
+  }
+}

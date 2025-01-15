@@ -1,11 +1,16 @@
 {
   "item.oscarfirstmod.lavashard": "Lava Shard",
   "item.oscarfirstmod.charged_lavashard": "Charged Lava Shard",
+  "item.oscarfirstmod.lavafinder": "Lava Finder",
+  "item.oscarfirstmod.lavalauncher": "Lava Launcher",
+  "item.oscarfirstmod.pepper": "Pepper",
+  "item.oscarfirstmod.chargedpepper": "Charged Pepper",
 
   "block.oscarfirstmod.fireshard_block": "Block of Lava Shard",
-  "block.oscarfirstmod.lavashard_stone_mineral_block": "Lava shard stone ore",
-  "block.oscarfirstmod.lavashard_deepslate_mineral_block": "Lava shard deepslate ore",
-  "block.oscarfirstmod.lavashard_netherrack_mineral_block": "Lava shard netherrack ore",
+  "block.oscarfirstmod.lavashard_stone_mineral_block": "Lava shard ore",
+  "block.oscarfirstmod.lavashard_deepslate_mineral_block": "deepslate lava shard ore",
+  "block.oscarfirstmod.lavashard_netherrack_mineral_block": "Nether lava shard ore",
+  "block.oscarfirstmod.burnedplanks": "Burned planks",
 
   "creativetab.oscar_mod_items": "Oscar's Mod Items",
   "creativetab.oscar_mod_blocks": "Oscar's Mod Blocks"

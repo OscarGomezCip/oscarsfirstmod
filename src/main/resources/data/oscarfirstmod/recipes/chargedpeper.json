@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    " #O",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "oscarfirstmod:pepper"
+    },
+    "O": {
+      "item": "oscarfirstmod:charged_lavashard"
+    }
+  },
+  "result": {
+    "item": "oscarfirstmod:chargedpepper"
+  }
+}
