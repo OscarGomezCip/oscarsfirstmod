@@ -24,6 +24,7 @@ public class ModCreativeTabs {
                         pOutput.accept(moditems.LAVALAUNCHER.get());
                         pOutput.accept(moditems.PEPPER.get());
                         pOutput.accept(moditems.CHARGEDPEPPER.get());
+                        pOutput.accept(moditems.SUPREME_LAVALAUNCHER.get());
 
                     })
                     .build());
@@ -37,6 +38,15 @@ public class ModCreativeTabs {
                         pOutput.accept(modblock.LAVASHARD_NETHERRACK_MINERAL_BLOCK.get());
                         pOutput.accept(modblock.FIRESHARD_BLOCK.get());
                         pOutput.accept(modblock.BURNEDPLANKS.get());
+                        pOutput.accept(modblock.BURNEDPLANKS_STAIRS.get());
+                        pOutput.accept(modblock.BURNEDPLANKS_SLAB.get());
+                        pOutput.accept(modblock.BURNEDPLANKS_BUTTON.get());
+                        pOutput.accept(modblock.BURNEDPLANKS_PRESSURE_PLATE.get());
+                        pOutput.accept(modblock.BURNEDPLANKS_FENCE.get());
+                        pOutput.accept(modblock.BURNEDPLANKS_FENCE_GATE.get());
+                        pOutput.accept(modblock.BURNEDPLANKS_WALL.get());
+                        pOutput.accept(modblock.BURNEDPLANKS_TRAPDOOR.get());
+                        pOutput.accept(modblock.BURNEDPLANKS_DOOR.get());
 
                     })
                     .build());

@@ -1,15 +1,14 @@
 package net.oscar.OscarFirstMod.block;
 
 
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -40,6 +39,30 @@ public class modblock {
 
     public static final RegistryObject<Block> BURNEDPLANKS = registerBlock("burnedplanks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final RegistryObject<Block> BURNEDPLANKS_STAIRS = registerBlock("burnedplanks_stairs",
+            () -> new StairBlock(() -> modblock.BURNEDPLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final RegistryObject<Block> BURNEDPLANKS_SLAB = registerBlock("burnedplanks_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+
+    public static final RegistryObject<Block> BURNEDPLANKS_BUTTON = registerBlock("burnedplanks_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_BUTTON),
+                    BlockSetType.DARK_OAK, 20, true));
+    public static final RegistryObject<Block> BURNEDPLANKS_PRESSURE_PLATE = registerBlock("burnedplanks_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS),
+                    BlockSetType.DARK_OAK));
+
+    public static final RegistryObject<Block> BURNEDPLANKS_FENCE = registerBlock("burnedplanks_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final RegistryObject<Block> BURNEDPLANKS_FENCE_GATE = registerBlock("burnedplanks_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> BURNEDPLANKS_WALL = registerBlock("burnedplanks_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+
+    public static final RegistryObject<Block> BURNEDPLANKS_DOOR = registerBlock("burnedplanks_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion(), BlockSetType.DARK_OAK));
+    public static final RegistryObject<Block> BURNEDPLANKS_TRAPDOOR = registerBlock("burnedplanks_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion(), BlockSetType.DARK_OAK));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

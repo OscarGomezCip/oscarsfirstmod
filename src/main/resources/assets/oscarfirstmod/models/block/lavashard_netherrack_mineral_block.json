@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "oscarfirstmod:block/lavashard_netherrack_mineral_block"
-  }
-}

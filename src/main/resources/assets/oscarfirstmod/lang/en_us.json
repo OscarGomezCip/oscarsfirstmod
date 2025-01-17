@@ -5,13 +5,27 @@
   "item.oscarfirstmod.lavalauncher": "Lava Launcher",
   "item.oscarfirstmod.pepper": "Pepper",
   "item.oscarfirstmod.chargedpepper": "Charged Pepper",
+  "item.oscarfirstmod.supreme_lavalauncher": "Supreme Lava Launcher",
 
   "block.oscarfirstmod.fireshard_block": "Block of Lava Shard",
   "block.oscarfirstmod.lavashard_stone_mineral_block": "Lava shard ore",
   "block.oscarfirstmod.lavashard_deepslate_mineral_block": "deepslate lava shard ore",
   "block.oscarfirstmod.lavashard_netherrack_mineral_block": "Nether lava shard ore",
   "block.oscarfirstmod.burnedplanks": "Burned planks",
+  "block.oscarfirstmod.burnedplanks_stairs": "Burned planks stairs",
+  "block.oscarfirstmod.burnedplanks_slab": "Burned planks slab",
+  "block.oscarfirstmod.burnedplanks_button": "Burned planks button",
+  "block.oscarfirstmod.burnedplanks_pressure_plate": "Burned planks pressure plate",
+  "block.oscarfirstmod.burnedplanks_fence": "Burned planks fence",
+  "block.oscarfirstmod.burnedplanks_fence_gate": "Burned planks fence gate",
+  "block.oscarfirstmod.burnedplanks_door": "Burned planks door",
+  "block.oscarfirstmod.burnedplanks_trapdoor": "Burned planks trapdoor",
+  "block.oscarfirstmod.burnedplanks_wall": "Burned planks wall",
 
   "creativetab.oscar_mod_items": "Oscar's Mod Items",
-  "creativetab.oscar_mod_blocks": "Oscar's Mod Blocks"
+  "creativetab.oscar_mod_blocks": "Oscar's Mod Blocks",
+
+  "tooltip.oscarfirstmod.lavafinder.tooltip": "It tolds you if there's lava under you.",
+  "tooltip.oscarfirstmod.lavalauncher.tooltip": "You can shoot fire to enemys!",
+  "tooltip.oscarfirstmod.supreme_lavalauncher.tooltip": "Places lava wherever you aim!"
 }

@@ -1,6 +1,18 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "oscarfirstmod:item/lavalauncher"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "oscarfirstmod:item/lavalauncher_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "oscarfirstmod:item/lavalauncher_2d"
+    },
+    "ground": {
+      "parent": "oscarfirstmod:item/lavalauncher_2d"
+    },
+    "fixed": {
+      "parent": "oscarfirstmod:item/lavalauncher_2d"
+    }
   }
 }

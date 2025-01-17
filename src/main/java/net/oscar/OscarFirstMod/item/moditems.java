@@ -8,6 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.oscar.OscarFirstMod.OscarFirstMod;
 import net.oscar.OscarFirstMod.item.costum.LavaFinderItem;
 import net.oscar.OscarFirstMod.item.costum.LavalauncherItem;
+import net.oscar.OscarFirstMod.item.costum.SupremeLavaLauncher;
 import net.oscar.OscarFirstMod.item.costum.fuelitem;
 
 public class moditems {
@@ -26,6 +27,8 @@ public class moditems {
             () -> new Item(new Item.Properties().food(modFood.PEPPER)));
     public static final RegistryObject<Item> CHARGEDPEPPER = ITEMS.register("chargedpepper",
             () -> new Item(new Item.Properties().food(modFood.CHARGEDPEPPER)));
+    public static final RegistryObject<Item> SUPREME_LAVALAUNCHER = ITEMS.register("supreme_lavalauncher",
+            () -> new SupremeLavaLauncher(new Item.Properties().durability(500)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

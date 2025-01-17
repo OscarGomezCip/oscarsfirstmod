@@ -1,5 +1,6 @@
 package net.oscar.OscarFirstMod.item.costum;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -10,8 +11,12 @@ import net.minecraft.world.entity.projectile.SmallFireball;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import org.checkerframework.common.returnsreceiver.qual.This;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class LavalauncherItem extends Item {
     public LavalauncherItem(Properties properties) {
@@ -34,5 +39,11 @@ public class LavalauncherItem extends Item {
         player.getCooldowns().addCooldown(this, 20);
 
         return InteractionResultHolder.sidedSuccess(itemStack, world.isClientSide);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        pTooltipComponents.add(Component.translatable("tooltip.oscarfirstmod.lavalauncher.tooltip"));
+        super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 }
